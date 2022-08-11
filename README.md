@@ -1,2 +1,2 @@
-# jon-porfolio
-jon-porfolio
+# jon-portfolio
+jon-potrfolio
