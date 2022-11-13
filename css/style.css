@@ -191,7 +191,7 @@ display:none;
   }
   .img-me{
     padding: 20px;
-    
+    border-radius: 300px;
   }
   .logo{
     font-size: 20px;
@@ -216,6 +216,7 @@ display:none;
       padding-top: 20px;
       width: 40%;
       float: left;
+      border-radius: 300px;
   }
   .img-info h2{
       padding: 20px 0px 0px 30px;
