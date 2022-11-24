@@ -9,13 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>  <!---learn this later-->
-<script>
-    $(document).ready(function(){
-       $('#icon').click(function(){
-        $('ul').toggleClass('show');
-       });
-    });
-</script>
+
 <title>Jon Christian Bista</title>
 </head>
 <body>
@@ -23,26 +17,28 @@
 <nav>
   <label ><a href="#" class="logo">Jon</a></label>
   <ul>
+
       <li><a href="#wrapper" class='bx bx-male'> About</a></li>
-      <li><a href="#experience" class='bx bxs-calendar-event'> Experience</a></li>
+      <li><a href="#experience" class='bx bxs-calendar-event'> Skill</a></li>
       <li><a href="#work" class='bx bxs-briefcase'> Work</a></li>
       <li><a href="#" class='bx bxs-contact' > Contact</a></li>
   </ul>
   <label id="icon">
-      <i class="fas fa-bars"></i>
+    <i class="fas fa-bars"></i>
   </label>
 </nav>
+
   <!-- intro-->
 <div class="intro">
    <div class="intro-content">
        <h1>Jon Christian Bista</h1><br>
-       <p>FRONT END SOFTWARE ENGINEER</p>
+       <p>FRONT END DEVELOPER</p>
    </div>
 </div>
 <!-- Intro end here -->
 <!-- about-->
 <div id="wrapper">
-  <img class="img-banner" src="img/luffy.png" alt="banner">
+  
   <article class="img-info">
       <h1>My name is</h1>
       <h2>Jon Christian Bista</h2>
@@ -56,38 +52,106 @@
 <!-- Experience -->
 <div id="experience">
   <div id="experience-content">
-      <h1>Experience</h1><br>
+      <h1>Skill</h1><br>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum tempore eveniet sapiente aperiam corporis, velit magni ipsam voluptates cumque reiciendis earum delectus. Magnam sequi perferendis harum cumque in soluta?</p>
   </div>
-  <div class="gallery">
-    <a target="_blank" href="img/intelgencia.png">
-      <img src="img/intelgencia.png" alt="intelgencia" width="600" height="400">
-    </a>
-    <div class="desc">I'm Currenlty work here as IT Engineer/Helpdesk
-    </div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="img/mba.jfif">
-      <img src="/img/mba.jfif" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Information Technology Technical Support</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="img/robinson.jpg">
-      <img src="img/robinson.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">IT Specialist</div>
-  </div>
-  
+  <table>
+    <tr>
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>JavaScript</th>
+    </tr>
+    <tr>
+        <td>  <div class="card">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <h2>html</h2>
+              <div class="container">
+                <div class="skills html"></div>
+              </div>
+              
+            </div>
+            
+            <div class="card__face card__face--back">
+              <div class="card__content">
+                <div class="card__header">
+                  <img src="img/htmllogo.gif" alt="" class="pp" />
+                  <h2>html</h2>
+                </div>
+                <div class="card__body">
+                  <h3>Hypertext Markup Language</h3>
+                  <p>I am almost 95% knowledgeable with HTML.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      <td> 
+          <div class="card2">
+          <div class="card__inner2">
+            <div class="card__face2 card__face2--front">
+              <h2>CSS</h2>
+              <div class="container">
+                <div class="skills css"></div>
+              </div>
+              
+            </div>
+            <div class="card__face2 card__face2--back">
+              <div class="card__content2">
+                <div class="card__header2">
+                  <img src="img/css.png" alt="" class="pp" />
+                  <h2>CSS</h2>
+                </div>
+                <div class="card__body2">
+                  <h3>Cascading Style Sheet</h3>
+                  <p>I am almost 80% knowledgeable with CSS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td> 
+        <div class="card3">
+        <div class="card__inner3">
+          <div class="card__face3 card__face3--front">
+            <h2>CSS</h2>
+            <div class="container">
+              <div class="skills js"></div>
+            </div>
+            
+          </div>
+          <div class="card__face3 card__face3--back">
+            <div class="card__content3">
+              <div class="card__header3">
+                <img src="img/JavaScript-logo.png" alt="" class="pp" />
+                <h2>JavaScript</h2>
+              </div>
+              <div class="card__body3">
+                <h3>JavaScript</h3>
+                <p>I am almost 65% knowledgeable with JavaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+
+    </tr>
+
+   
+
+</table>
 </div>
+
+
+
+	
 <!-- Experience End here-->
 <div id="work">
-  <div id="experience-content">
-  <h1>Work</h1><br>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum tempore eveniet sapiente aperiam corporis, velit magni ipsam voluptates cumque reiciendis earum delectus. Magnam sequi perferendis harum cumque in soluta?</p>
-  </div>
+  
 </div>
+<script src="main.js"></script>
+
 </body>
 </html>
