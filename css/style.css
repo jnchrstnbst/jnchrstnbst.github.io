@@ -6,14 +6,15 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #233554;
+ background-color: #4F4F4D;
 }
 /*Nav Bar start*/
 nav{
   height: 80px;
   width: 100%;
-  background: #233554;
+  background: #4F4F4D;
   position: fixed;
+  border-radius: 0px 0px 20px 20px;
 }
 label .logo{
   font-size: 30px;
@@ -26,8 +27,6 @@ label .logo{
 nav ul{
   float:right;
   margin-right: 40px;
-
-
 }
 nav li{
   display: inline-block;
@@ -47,70 +46,18 @@ a:hover{
   color: #233554;
 } 
 nav #icon{
-color:#233554;
+color: #233554;
 font-size: 90px;
 line-height: 50px;
 float:right;
 margin-right:50px;
 cursor: pointer;
-display:none;
-}
 
-
-@media (max-width: 1048px){
-  label.logo{
-      font-size: 90px;
-      font-weight: bold;
-      color: darkcyan;
-      padding: 0 20px;
-      line-height: 80px;
-      text-shadow: 2px 2px #000;
-  }
-  nav ul{
-      margin-right: 20px;
-  }
-  nav a{
-      font-size:17px;
-  }
-}
-@media (max-width:809px){
-  nav #icon{
-    display:block;
-    font-size: 30px;
-    margin: 20px;
-}
-  nav ul{
-      position: fixed;
-      width: 60%;
-      height: 60%;
-      background: #233554;
-      border-radius: 7px;
-      top:70px;
-      left: -900px;
-      text-align: left;
-      transition: all .5s;
-      
-  }
-  nav li{
-  display:block;
-  margin: 50px;
-  line-height: 20px;
-  }
-  nav a{
-  font-size: 20px;
-  }
-  a.active,a:hover{
-  border:none;
-  color:#233554;
-  }
-  nav ul.show{
-      left:0;
-  }
 }
 /*Nav Bar end*/
 /*intro Start here*/
 .intro{
-  background-image: linear-gradient(to right,#233554, darkcyan);
+  background-image: linear-gradient(to right,#4F4F4D, #4C4C49);
   height: 100vh;
   background-position: center;
   background-repeat: cover;
@@ -130,20 +77,11 @@ display:none;
    padding: 0px 30px 20px;
    text-shadow: 2px 2px #000;
 }
-@media (min-width: 375px) and (max-width: 812px) {
-
-  .intro-content h1{
-   color: darkcyan;
-     text-align: center;
-     font-size: 50px;
-  }
-
-}
 /*intro end here*/
 #wrapper{
-  background-image: linear-gradient(to right, darkcyan,#233554);
-  width: 100%;
-  height: 1000px;
+  background-image: linear-gradient(to right, #4F4F4D,#575A58);
+  width: 9000px;
+  height: 900px;
   background-position: center;
   background-repeat: cover;
   padding-top: 100px;
@@ -161,7 +99,7 @@ display:none;
   color: darkcyan;
 }
 .img-info h2{
-  padding: 30px 30px 20px;
+  padding: 20px 0px 0px 30px;
   font-size: 50px;
   line-height: 60px;
   text-shadow: 2px 2px #000;
@@ -169,46 +107,86 @@ display:none;
 }
 .img-info p{
   color: #000;
-  padding: 0px 30px 20px;
+  margin:  20px 30px 20px 90px;
   font-size: 16px;
   line-height: 24px;
-
+  padding: 10px 0px 0px 30px;
 }
 .img-me{
-  width: 100%;
-  padding: 20px;
+  padding-top: 20px;
+  width: 40%;
+  float: left;
   border-radius: 300px;
 }
-/*media query Desktop Mode*/
-@media only screen and (min-width: 1000px){
+
+/*Android Device*/
+@media (max-width:  480px){
+  nav #icon{
+    display: block;
+    font-size: 40px;
+    margin: 20px;
+}
+  nav ul{
+
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: #4C4C49;
+    top:80px;
+    left: -900px;
+    text-align: right;
+    transition: all .5s;
+  }
+  nav li{
+  display:block;
+  margin: 50px;
+  line-height: 30px;
+  }
+  nav a{
+  font-size: 20px;
+  }
+  a.active,a:hover{
+  border:none;
+  color:darkcyan;
+  }
+  nav ul.show{
+      left:0;
+  }
   #wrapper{
     width: 100%;
-    height: 1000px;
-  }
-  .img-info{
-      width: 50%;
-      float: right;
-  }
-  .img-me{
-      padding-top: 20px;
-      width: 40%;
-      float: left;
-      border-radius: 300px;
-  }
-  .img-info h2{
-      padding: 20px 0px 0px 30px;
-  }
-  .img-info p{
-      padding: 20px 0px 0px 30px;
-  }
+
+}
+.img-info h2{
+  
+    font-size: 30px;
+    
+}
+.img-info p{
+    padding: 20px 0px 0px;
+}
+.img-me{
+  padding: 10px;
+  border-radius: 300px;
+}
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  color: cyan;
+  padding: 0 20px;
+  line-height: 80px;
  
 }
+.card {
+  
+}
+
+
+
+}
+/*----------------------------------*/
 /*Tablet Mode*/
 @media only screen and (min-width: 768px){
-  .img-banner{
-      width: 100%;
-      padding-bottom: 30px;
-  }
+
   #wrapper{
       width: 600px;
       margin: 0 auto;
@@ -234,11 +212,15 @@ display:none;
  
 }
 
+
+
+
+
+
 /*Experience Start here*/
 #experience{
   padding-top: 40px;
-  background-color: green;
-  background-image: linear-gradient(to left, #233554,darkcyan);
+  background-image: linear-gradient(to left, #575A58,#636565);
   height: 100%;
   background-position: center;
   background-repeat: cover;
@@ -581,36 +563,9 @@ display:none;
 .css {width: 80%; background-color: #2196F3;}
 .js {width: 65%; background-color: yellow;}
 
-
-@media (min-width: 390px) and (max-width: 844px) {
-  #experience{
-   
-    height: 100vh;
-  
-     
-  }
-  .experience-content h1{
-   color: darkcyan;
-     text-align: center;
-     font-size: 30px;
-  }
-  .gallery{
-    width: 200px;
-    margin: 20px 30px 2px 130px; 
- 
-}
-.gallery img {
-  width: 100%;
-  
-  
-}
-}
-table, th, td{
-  border-radius: 1px;
-}
 /*Experience end here*/
 #work{
-  background-image: linear-gradient(to left, darkcyan,#233554);
+  background-image: linear-gradient(to left, #636565,#575A58);
   width: 100%;
   height: 1000px;
   background-position: center;
@@ -626,9 +581,4 @@ table, th, td{
    text-shadow: 2px 2px #000;
   
  }
-/*media query Desktop Mode*/
-@media only screen and (min-width: 1000px){
-  #work{
-    width: 1000px;
-}
-}
+ /*----------------------------------------------------------------------------------------------*/
