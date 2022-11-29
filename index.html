@@ -21,7 +21,7 @@
       <li><a href="#wrapper" class='bx bx-male'> About</a></li>
       <li><a href="#experience" class='bx bxs-calendar-event'> Skill</a></li>
       <li><a href="#work" class='bx bxs-briefcase'> Work</a></li>
-      <li><a href="#" class='bx bxs-contact' > Contact</a></li>
+      <li><a href="#contact" class='bx bxs-contact' > Contact</a></li>
   </ul>
   <label id="icon">
     <i class="fas fa-bars"></i>
@@ -32,7 +32,7 @@
 <div class="intro">
    <div class="intro-content">
        <h1>Jon Christian Bista</h1><br>
-       <p>FRONT END DEVELOPER</p>
+       <p>Front-end Developer</p>
    </div>
 </div>
 <!-- Intro end here -->
@@ -40,6 +40,7 @@
 <div id="wrapper">
   
   <article class="img-info">
+    <h1>0.1 About</h1>
     <img class="img-me" src="img/jon.jpg" alt="me">
       <h1>"Hello" </h1>
       <h2>I'm Jon</h2>
@@ -53,84 +54,9 @@
 <!-- Experience -->
 <div id="experience">
   <div id="experience-content">
-      <h1>Skill</h1><br>
+      <h1>0.2 Expertise</h1><br>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum tempore eveniet sapiente aperiam corporis, velit magni ipsam voluptates cumque reiciendis earum delectus. Magnam sequi perferendis harum cumque in soluta?</p>
-  </div>
-
-  
-        <div class="card">
-          <div class="card__inner">
-            <div class="card__face card__face--front">
-              <h2>html</h2>
-              <div class="container">
-                <div class="skills html"></div>
-              </div>
-              
-            </div>
-            
-            <div class="card__face card__face--back">
-              <div class="card__content">
-                <div class="card__header">
-                  <img src="img/htmllogo.gif" alt="" class="pp" />
-                  <h2>html</h2>
-                </div>
-                <div class="card__body">
-                  <h3>Hypertext Markup Language</h3>
-                  <p>I am almost 95% knowledgeable with HTML.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <div class="card2">
-          <div class="card__inner2">
-            <div class="card__face2 card__face2--front">
-              <h2>CSS</h2>
-              <div class="container">
-                <div class="skills css"></div>
-              </div>
-              
-            </div>
-            <div class="card__face2 card__face2--back">
-              <div class="card__content2">
-                <div class="card__header2">
-                  <img src="img/css.png" alt="" class="pp" />
-                  <h2>CSS</h2>
-                </div>
-                <div class="card__body2">
-                  <h3>Cascading Style Sheet</h3>
-                  <p>I am almost 80% knowledgeable with CSS.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="card3">
-        <div class="card__inner3">
-          <div class="card__face3 card__face3--front">
-            <h2>JavaScript</h2>
-            <div class="container">
-              <div class="skills js"></div>
-            </div>
-            
-          </div>
-          <div class="card__face3 card__face3--back">
-            <div class="card__content3">
-              <div class="card__header3">
-                <img src="img/JavaScript-logo.png" alt="" class="pp" />
-                <h2>JavaScript</h2>
-              </div>
-              <div class="card__body3">
-                <h3>JavaScript</h3>
-                <p>I am almost 65% knowledgeable with JavaScript.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
- 
-</div>
+  </div>  
 </div>
 
 
@@ -138,9 +64,38 @@
 	
 <!-- Experience End here-->
 <div id="work">
-  
+  <h1>0.3 Project</h1><br>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum tempore eveniet sapiente aperiam corporis, velit magni ipsam voluptates cumque reiciendis earum delectus. Magnam sequi perferendis harum cumque in soluta?</p>
+</div>
+<div id="contact">
+  <h1>0.4 Get in touch</h1><br>
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <input id="message" row="5" placeholder="How Can I help you?">
+      <button type="submit ">Send</button>
+    </form>
 </div>
 <script src="main.js"></script>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+   function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "jnchrstnbst@gmail.com",
+    Password : "1CFE734B80CBF306E8ADEE9E5618B9376B3A",
+    To : 'jonbista21.parsu@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+      + "<br> Email: " + document.getElementById("email").value
+      + "<br> Phone Number: " + document.getElementById("phone").value
+      + "<br> Message: " + document.getElementById("message").value
+  }).then(
+  message => alert("Message Sent Successfully")
+  );
+}
+</script>
 </body>
 </html>
