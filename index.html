@@ -73,7 +73,7 @@
       <input type="text" id="name" placeholder="Name" required>
       <input type="email" id="email" placeholder="Email" required>
       <input type="text" id="phone" placeholder="Phone Number" required>
-      <input id="message" row="5" placeholder="How Can I help you?">
+      <input id="message" row="10" placeholder="How Can I help you?">
       <button type="submit ">Send</button>
     </form>
 </div>
@@ -82,11 +82,9 @@
 <script>
    function sendEmail(){
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "jnchrstnbst@gmail.com",
-    Password : "1CFE734B80CBF306E8ADEE9E5618B9376B3A",
-    To : 'jonbista21.parsu@gmail.com',
-    From : document.getElementById("email").value,
+    SecureToken:"27757254-f7ae-45e6-8b70-baad8f77e355",
+    To : 'jnchrstnbst@gmail.com',
+    From : "jonbista21.parsu@gmail.com",
     Subject : "New Contact Form Enquiry",
     Body : "Name: " + document.getElementById("name").value
       + "<br> Email: " + document.getElementById("email").value
