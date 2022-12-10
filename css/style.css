@@ -21,8 +21,7 @@ label .logo{
   font-weight: bold;
   color: #008B8B;
   padding: 0 20px;
-  line-height: 65px;
-  text-shadow: 2px 2px #ffffff;
+  line-height: 60px;
 }
 nav ul{
   float:right;
