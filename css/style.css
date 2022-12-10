@@ -294,12 +294,6 @@ nav{
    text-shadow: 2px 2px #000;
 }
 
- #contact p{
-  color: #008B8B;
-  text-align: center;
-  font-size: 12px;
-  padding: 0px 30px 20px;
- }
  form{
    background-color: #474747;
    display: flex;
@@ -327,7 +321,16 @@ form button{
   outline: none;
   cursor: pointer;
   border-radius: 30px;
-  width: 150px;
+  width: 100px;
   margin: 20px auto 0;
+}
+.error
+{
+  color: red;
+  size: 80%
+}
+.hidden
+{
+  display:none
 }
  /*----------------------------------------------------------------------------------------------*/
