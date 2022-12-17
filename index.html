@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css\style.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>  <!---learn this later-->
+<link rel="stylesheet" href="css\style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>  <!---learn this later-->
+
 
 <title>Jon Christian Bista</title>
 </head>
@@ -19,7 +20,7 @@
   <label ><a href="#" class="logo">Jon</a></label>
   <ul>
 
-      <li><a href="#wrapper" class='bx bx-male'> About</a></li>
+      <li><a href="#about" class='bx bx-male'> About</a></li>
       <li><a href="#experience" class='bx bxs-calendar-event'> Skill</a></li>
       <li><a href="#work" class='bx bxs-briefcase'> Work</a></li>
       <li><a href="#contact" class='bx bxs-contact' > Contact</a></li>
@@ -38,7 +39,7 @@
 </div>
 <!-- Intro end here -->
 <!-- about-->
-<div id="wrapper">
+<div id="about">
   
   <article class="img-info">
     <h1>0.1 About</h1>
@@ -54,19 +55,42 @@
 <!-- About end here -->
 <!-- Experience -->
 <div id="experience">
-  <div id="experience-content">
-      <h1>0.2 Expertise</h1><br>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum tempore eveniet sapiente aperiam corporis, velit magni ipsam voluptates cumque reiciendis earum delectus. Magnam sequi perferendis harum cumque in soluta?</p>
+  <h1>0.2 Skill</h1><br>
+  <div class="experience-content">
+    <div class="content">
+      
+      <img class="img-skill" src="\img\html.png" alt="html">
+      <h3>HTML</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit ipsa atque, </p>
+    </div>
+
+    
+    <div class="content">
+      <img class="img-skill" src="\img\css.png" alt="css">
+      <h3>CSS</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit ipsa atque,</p>
+    </div>
+    <div class="content">
+      <img class="img-skill" src="\img\javascript.png" alt="javaScript">
+      <h3>JavaScript</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit ipsa atque,</p>
+    </div>
+    <div class="content">
+      <img class="img-skill" src="\img\reactjs.png" alt="reactjs">
+       <h3>Reactjs</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit ipsa atque,</p>
+    </div>
+
+  
   </div>  
+  
 </div>
 
-
-
-	
 <!-- Experience End here-->
 <div id="work">
   <h1>0.3 Project</h1><br>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum tempore eveniet sapiente aperiam corporis, velit magni ipsam voluptates cumque reiciendis earum delectus. Magnam sequi perferendis harum cumque in soluta?</p>
+  <h1 style="font-size: 50px; ">We&rsquo;ll be back soon!</h1>
+<p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="#contact">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
 </div>
 <div id="contact" >
   <h1>0.4 Get in touch</h1><br>
@@ -74,7 +98,7 @@
     <input type="text" id="name" placeholder="Name" required>
     <input type="email" id="email" placeholder="Email" required>
     <input type="text" id="phone" placeholder="Phone Number" pattern="((^(\+)(\d){12}$)|(^\d{11}$))" required>
-    <input id="message" row="10" placeholder="How Can I help you?">
+    <textarea id="message" cols="60" rows="5" placeholder="Message Here"></textarea>
     <button type="submit">Send</button>
   </form>
 </div>
