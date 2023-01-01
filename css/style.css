@@ -69,15 +69,7 @@ nav #icon{
    font-size: 5rem;
    padding: 300px 50px 20px 90px;
    text-shadow: 2px 2px #A5A5A5;
-}/*
-.intro-content p{
-  color: #F3EFE0;
-   text-align: center;
-   font-size: 20px;
-   padding: 0px 30px 20px;
-}*/
-
-
+}
 .roller{
   font-size: 3rem;
   height: 4.125rem;
@@ -205,8 +197,6 @@ nav ul.show{
 .intro h1{
 font-size: 43px;
 }
-
-
 .img-me{
 padding: 30px;
 border-radius: 300px;
