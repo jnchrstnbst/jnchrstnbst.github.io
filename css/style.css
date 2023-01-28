@@ -13,7 +13,7 @@ body{
 nav{
   height: 60px;
   width: 100%;
-  background: #474747;
+  background-color: transparent;
   position: fixed;
   top: 0; 
   z-index: 99;
@@ -60,6 +60,7 @@ nav #icon{
 .intro{
   background-color:  #434242;
   height: 100vh;
+  width: auto;
   background-position: center;
   background-repeat: cover;
 }

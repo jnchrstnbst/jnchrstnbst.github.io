@@ -19,3 +19,5 @@ function sendEmail(){
   );
 }
 
+
+console.log(window)
